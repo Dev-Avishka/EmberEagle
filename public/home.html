@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home - EmberEagle</title>
+</head>
+<body>
+    <div class="topbar">
+        <a href="luser.html" class="user-link">
+            <img id="ppic" class="ppic" src="path/to/your/image.jpg">
+            <h3 id="name" class="name" style="color: black;">User Name</h3>
+        </a>
+        <a href="home.html" class="user-link">
+            <img id="ppic" style="max-width:50px" src="https://cdn-icons-png.flaticon.com/512/60/60817.png">
+        </a>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+    <center>
+        <div id="posts"></div>
+    </center>
+
+    <a href="createpost.html" >
+        <div class="floating-button">
+            <span class="plus-sign">+</span>
+        </div>
+    </a>
+    <script src="home.js"></script>
+</body>
+</html>

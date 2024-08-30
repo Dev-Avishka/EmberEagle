@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="createpost.css"> <!-- Link to your stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <h3><div class="forgot-password"><a href="home.html" >Go Back</a></div></h3>
+        <h1>Create a New Post</h1>
+        <form id="createPostForm" enctype="multipart/form-data">
+
+            <div>
+                <label for="caption">Caption:</label>
+                <textarea id="caption" name="caption" required></textarea>
+            </div>
+            <div>
+                <label for="images">Images:</label>
+                <label for="images" class="custom-file-upload">
+                    +
+                </label>
+                <input type="file" id="images" name="images" accept="image/*" multiple>
+            </div>
+            <div>
+                <label for="videos">Videos:</label>
+                <label for="videos" class="custom-file-upload">
+                    +
+                </label>
+                <input type="file" id="videos" name="videos" accept="video/*" multiple>
+            </div>
+            <button type="submit">Create Post</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="createpost.js"></script>
+</body>
+</html>
